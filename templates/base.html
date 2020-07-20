@@ -1,0 +1,87 @@
+{% load static %}
+{%load humanize%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Auto Blogr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/mdb.css' %}" >
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" >
+  {%block styles%}
+  {%endblock%}
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white z-depth-0 border-bottom ">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="nav-item" href="#" >
+          <span class="text-dark"><img src="{%static 'images/favicon.ico'%}" style="height:25px">&nbsp; </span>
+        </a>
+
+        <!-- Collapse -->
+
+        <!-- Links -->
+        <div class="ml-auto">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            </li>
+          </ul>
+
+          <!-- Right -->
+          <ul class="navbar-nav nav-flex-icons">
+
+            <li class="nav-item">
+              <a href="https://github.com/MercurialMune/autoblogr" class=""
+                target="_blank">
+                <i class="fab fa-github mr-2 ml-2 text-dark fa-lg nav-link" style="height:25px"></i></a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+  </header>
+  <!--Main Navigation-->
+
+{%block content%}
+{%endblock%}
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script  src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{%static 'js/mdb.js'%}"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    new WOW().init();
+  </script>
+  {%block scripts%}
+  {%endblock%}
+</body>
+
+</html>

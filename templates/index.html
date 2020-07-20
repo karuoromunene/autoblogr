@@ -1,0 +1,45 @@
+{%extends 'base.html'%}
+{%load static%}
+
+
+
+{%block styles%}
+{%endblock%}
+{%block content%}
+<!--Main layout-->
+  <main class="mt-5 pt-5 mb-5">
+    <div class="text-center">
+      <h1><img src="{%static 'images/favicon.ico'%}"></h1>
+      <h2>Auto Blogr</h2>
+      <h5>Create content by crawling select articles from the web</h5>
+    </div>
+    <div class="container " >
+
+
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small black">
+
+
+    <!-- Social icons -->
+    <div class="pb-4 pt-4">
+        © <span id="year"></span> Copyright:
+      <a href="https://github.com/MercurialMune/" target="_blank"> Mercurial Mune </a>
+    </div>
+    <!-- Social icons -->
+
+
+
+  </footer>
+  <!--/.Footer-->
+
+{%endblock%}
+{%block scripts%}
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+{%endblock%}
